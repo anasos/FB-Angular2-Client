@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <span>App</span>
+    <span class="fill-space"></span>
+    <button mat-button class="right-button" (click)="logout()">logout</button>
+</mat-toolbar>
+
+<button *ngIf="!is_logged" (click)="login()" mat-button color="success">
+  Login
+</button>
+
+<albums-list [albums]=albums></albums-list>

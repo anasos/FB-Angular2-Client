@@ -1,0 +1,6 @@
+<div class="clearfix"><h3>{{album.name}}</h3></div>
+<div>
+	<div *ngFor="let picture of album.photos">
+    	<picture-card [picture]=picture></picture-card>
+  	</div>
+</div>

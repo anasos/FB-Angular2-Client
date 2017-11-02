@@ -1,0 +1,25 @@
+<div>
+  <h1>Login</h1>
+  <form role="form" (submit)="login($event, username.value, password.value)">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Username" id="username" #username >
+    </mat-form-field>
+
+    <p>
+      <mat-form-field class="example-full-width">
+      <input matInput placeholder="Password" id="password" type="password" #password>
+    </mat-form-field>
+    </p>
+
+    <!-- <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" #username class="form-control" id="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" #password class="form-control" id="password" placeholder="Password">
+    </div> -->
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+      <a [routerLink]="['/sign-up']" mat-button >Click here to Signup</a>
+  </form>
+</div>

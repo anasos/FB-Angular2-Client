@@ -1,0 +1,32 @@
+<h3> Sign-Up </h3>
+<div>
+ <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+  <table>
+    <tr>
+      <td>Username</td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput formControlName="username">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>Email</td><td>
+      <mat-form-field class="example-full-width">
+        <input matInput formControlName="email" type="email">
+      </mat-form-field>
+      </td>
+    </tr>	
+    <tr>
+      <td>Password</td><td>
+      <mat-form-field class="example-full-width">
+        <input matInput formControlName="password" type="password">
+      </mat-form-field>
+      </td>
+    </tr>  
+    <tr>
+      <td colspan="2"> <button mat-raised-button color="primary">SignUp</button>  </td>
+    </tr>
+  </table>
+ </form> 
+ <br/>
